@@ -2,6 +2,7 @@
  "Bot": {
      "Token": "Botunuzun discord tokeni",
      "Prefix": "Ön ek (! vb.)",
+      "moderator" : "Moderatör rolünün idsi (ban komutu için)",
     "Developers": ["Botunuz geliştirici(leri)"]
     },
  "Server" : {
