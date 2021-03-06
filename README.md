@@ -20,7 +20,7 @@
 
 ### Komutlar
 
-- `.oysorgu` İsmi belirtilen kişinin sunucuya oy verip vermediğini gösterir.
-- `.bansorgu` İsmi belirtlilen kişinin banlanıp banlanmadığını gösterir.
+- `.oysorgu` Kullanıcı adı belirtilen kişinin sunucuya oy verip vermediğini gösterir.
+- `.bansorgu` Kullanıcı adı belirtilen kişinin banlanıp banlanmadığını gösterir.
 - `.sunucu` Sunucu bilgisini verir.
-- `.ban` İsmi belirtlilen kişinin banını bota kaydettirir.
+- `.ban` Kullanıcı adı belirtilen kişinin banını bota kaydettirir.
