@@ -7,7 +7,8 @@
 
 ### Kurulum
 
-- Modülleri indirmek için öncelikle NodeJS kurun ardından `npm install`
+- Modüllerin kurulması için NodeJS ve Python cihazınızda kurulu olmalı.
+- Modülleri indirmek için `npm install`
 - Config dosyasını doldurduktan sonra botu çalıştırmak için `node .`
 
 
