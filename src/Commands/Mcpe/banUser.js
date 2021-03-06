@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const Base = require("../../Base/Command");
+const config = require('../../../config.json');
 const db = require("quick.db")
 
  class KomutAdı extends Base {
@@ -19,6 +20,8 @@ const db = require("quick.db")
 
     let member = args[0]
     let reason = args.slice(1).join(" ")
+
+    if (!message.member.roles.cache.has(`${config.Bot.moderator}`)) return message.channel.send("Bu komutu kullanmak için gerekli yetkiye sahip değilsin.")
 
    if (!member) return message.channel.send("Oyuncu belirtmedin, doğru kullanım : .ban oyuncu sebep")
    if (!reason) return message.channel.send("Sebep belirtmedin, doğru kullanım : .ban oyuncu sebep")
