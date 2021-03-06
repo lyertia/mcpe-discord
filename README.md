@@ -16,7 +16,15 @@
 ### Notlar
 
 - OySorguyu deneyemedim ihtimali azda olsa hata oluşabilir, bana ulaşınız.
-- Ban komutu sunucunuzdaki kişiye ban atmaz yalnızca oyuncular bilgi alabilsin diye yapılmıştır. Yetkili, bir oyuncuyu sunucuda yasaklarsa oyuncuların bunu discord üzerinden sorgulaması için yetkili kişi `.ban` komutunu kullanarak banı bota kayıt ettirmeli.
+- Ban komutu sunucunuzdaki kişiye ban atmaz yalnızca oyuncular bilgi alabilsin diye yapılmıştır. Yetkili kişi, bir oyuncuyu sunucuda yasaklarsa oyuncuların bunu discord üzerinden sorgulayabilmesi için yetkili kişi `.ban` komutunu kullanarak banı bota kayıt ettirmeli.
+
+
+
+### Özellikler
+
+- Botun durumunda sunucunuzdaki oyuncu sayısı yazar.
+
+
 
 ### Komutlar
 
