@@ -15,5 +15,11 @@
 ### Notlar
 
 - OySorguyu deneyemedim ihtimali azda olsa hata oluşabilir, bana ulaşınız.
-- Ban komutu sunucunuzdaki kişiye ban atmaz yalnızca oyuncular bilgi alabilsin diye yapılmıştır. Yetkili bir oyuncuyu sunucuda yasaklarsa diğer oyuncuların bunu sorgulaması için yetkili kişi .ban komutunu kullanmalı.
+- Ban komutu sunucunuzdaki kişiye ban atmaz yalnızca oyuncular bilgi alabilsin diye yapılmıştır. Yetkili, bir oyuncuyu sunucuda yasaklarsa oyuncuların bunu discord üzerinden sorgulaması için yetkili kişi `.ban` komutunu kullanarak banı bota kayıt ettirmeli.
 
+### Komutlar
+
+- `.oysorgu` İsmi belirtilen kişinin sunucuya oy verip vermediğini gösterir.
+- `.bansorgu` İsmi belirtlilen kişinin banlanıp banlanmadığını gösterir.
+- `.sunucu` Sunucu bilgisini verir.
+- `.ban` İsmi belirtlilen kişinin banını bota kaydettirir.
