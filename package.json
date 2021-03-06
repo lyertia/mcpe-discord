@@ -1,0 +1,20 @@
+{
+  "name": "mcpe-bot",
+  "version": "3.0.0",
+  "description": "Minecraft sunucuları için discord botu.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "github.com/lyertia",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fs": "0.0.1-security",
+    "mcpeping": "0.0.3",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
+    "pogger": "0.0.4",
+    "quick.db": "^7.1.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+ "Bot": {
+     "Token": "Botunuzun discord tokeni",
+     "Prefix": "Ön ek (! vb.)",
+    "Developers": ["Botunuz geliştirici(leri)"]
+    },
+ "Server" : {
+    "name" : "Sunucunuzun adı",
+    "ip" : "Sunucunuzun ip adresi",
+    "port" : "19132", 
+    "apikey" : "PocketServer API Keyiniz (oysorgu için)"
+    }
+}
