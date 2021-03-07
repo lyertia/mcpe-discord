@@ -3,6 +3,7 @@
      "Token": "Botunuzun discord tokeni",
      "Prefix": "Ön ek (! vb.)",
       "moderator" : "Moderatör rolünün idsi (ban komutu için)",
+      "statusDelay": "19",
     "Developers": ["Botunuz geliştirici(leri)"]
     },
  "Server" : {
