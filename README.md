@@ -4,6 +4,10 @@
 - Base Class https://github.com/barbecue/base-class-v12
 
 
+### Gelişmiş Versiyon
+
+- Gelişmiş versiyonunu parayla satıyorum discord üzerinden ulaşabilirsiniz. Değişiklikler: Discord üzerinden oyun sunucusundaki kişiye ban atma ve diğer geliştirmeler. (Bilgi için ulaşabilirsiniz)
+
 
 ### Kurulum
 
