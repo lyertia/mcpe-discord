@@ -21,9 +21,7 @@ const fetch = require("node-fetch")
       
     if(!args[0]) return message.channel.send("Sorgulamak istediğin kişinin minecraftdaki ismini yazmalısın örnek .oysorgu Ly3rtia")
     fetch(`https://minecraftpocket-servers.com/api/?object=votes&element=claim&key=${config.Server.apikey}&username=${args[0]}`).then(res => res.text()).then(body => {
-     let oy = ""
-      if(body === `1`) { oy = `${args[0]} kişisi sunucumuza oy vermiş.` } else { oy = `${args[0]} kişisi sunucumuza oy vermemiş.`};
-      if(body === `2`) oy = `${args[0]} kişisi sunucumuza oy vermemiş.`
+    let oy = body == 1 ? `${args[0]} kişisi sunucumuza oy vermiş.` : `${args[0]} kişisi sunucumuza oy vermemiş.`;
 
        const oyembed = new Discord.MessageEmbed()
     .setColor('#0099ff')
