@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const Base = require("../../Base/Command");
-const mcpeping = require("mcpeping")
+const Gamedig = require('gamedig');
 const config = require('../../../config.json');
 
  class KomutAdı extends Base {
@@ -19,14 +19,17 @@ const config = require('../../../config.json');
   async Execute(client, message, args, config) {
 
     
-    mcpeping(config.Server.ip, config.Server.port, function(err, res) {
-      if (err) {
-          message.channel.send("Sunucudan bilgi alınamadı.");
-          console.log(err);
-      } else {
-          message.channel.send(`Oyuncu Sayısı : ${res.currentPlayers}/${res.maxPlayers}`);
-      }
-  });
+    Gamedig.query({
+      type: 'minecraftpe',
+      host: config.Server.ip,
+      port: config.Server.port,
+  }).then((res) => {
+          message.channel.send(`Oyuncu Sayısı : ${res.players.length}/${res.maxplayers}`);
+        }).catch((error) => {
+          console.log("Sunucudan bilgi alınamadı.");
+          console.log(error)
+      });
+      
 }
 }
 module.exports = KomutAdı;

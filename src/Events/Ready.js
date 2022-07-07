@@ -1,5 +1,5 @@
 const Base = require("../Base/Event")
-const mcpeping = require("mcpeping")
+const Gamedig = require('gamedig');
 const config = require('../../config.json'),
 
 
@@ -14,15 +14,14 @@ class Ready extends Base {
     async Execute() {
         console.log(`${Client.user.tag} başarıyla giriş yaptı!`);
         setInterval(() => {
-            mcpeping(config.Server.ip, config.Server.port, function(err, res) {
-                        if (err) {
-                            console.log("Sunucudan bilgi alınamadı.");
-                            console.log(err);
-                        } else {
-                      Client.user.setPresence({ activity: { name: `${res.currentPlayers} kişi ${config.Server.name}` }, status: 'dnd' });
-                                }
-                    });
+            Gamedig.query({
+                type: 'minecraftpe',
+                host: config.Server.ip,
+                port: config.Server.port,
+            }).then((res) => {
+              Client.user.setPresence({ activity: { name: `${res.players.length} kişi ${config.Server.name}` }, status: 'dnd' });
             },config.Bot.statusDelay*1000)
+    },config.Bot.statusDelay*1000)
     }
 }
 

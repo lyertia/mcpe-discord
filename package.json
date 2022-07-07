@@ -1,6 +1,6 @@
 {
   "name": "mcpe-bot",
-  "version": "3.0.0",
+  "version": "3.5.0",
   "description": "Minecraft sunucuları için discord botu.",
   "main": "main.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "discord.js": "^12.5.1",
     "fs": "0.0.1-security",
-    "mcpeping": "0.0.3",
+    "gamedig": "^4.0.4",
     "node-fetch": "^2.6.1",
     "path": "^0.12.7",
     "pogger": "0.0.4",
